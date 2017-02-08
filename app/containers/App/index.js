@@ -10,7 +10,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
-import Header from 'components/Header';
+import YubaHeader from 'components/YubaHeader';
 import Footer from 'components/Footer';
 import withProgressBar from 'components/ProgressBar';
 
@@ -33,7 +33,7 @@ export function App(props) {
           { name: 'description', content: 'A React.js Boilerplate application' },
         ]}
       />
-      <Header />
+      <YubaHeader/>
       {React.Children.toArray(props.children)}
       <Footer />
     </AppWrapper>

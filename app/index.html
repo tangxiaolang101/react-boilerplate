@@ -8,7 +8,11 @@
     <!-- Allow installing the app to the homescreen -->
     <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>React.js Boilerplate</title>
+    <title>React.js Boilerplate</title>   
+    <script>      
+        (function(doc,win){var docEl=doc.documentElement,resizeEvt="orientationchange" in window?"orientationchange":"resize",recalc=function(){var clientWidth=docEl.clientWidth;if(!clientWidth){return}if(clientWidth>=750){docEl.style.fontSize="100px"}else{docEl.style.fontSize=100*(clientWidth/750)+"px"}};if(!doc.addEventListener){return}win.addEventListener(resizeEvt,recalc,false);doc.addEventListener("DOMContentLoaded",recalc,false)})(document,window);    
+    </script> 
+    
   </head>
   <body>
     <!-- Display a message if JS has been disabled on the browser. -->

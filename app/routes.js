@@ -38,13 +38,34 @@ export default function createRoutes(store) {
 
         importModules.catch(errorLoading);
       },
-    }, {
+    }, 
+    {
       path: '/features',
       name: 'features',
       getComponent(nextState, cb) {
         import('containers/FeaturePage')
           .then(loadModule(cb))
           .catch(errorLoading);
+      },
+    }, {
+      path: '/homepage',
+      name: 'yubaHomepage',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          import('containers/YubaHomepage/reducer'),
+          import('containers/YubaHomepage/sagas'),
+          import('containers/YubaHomepage'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([reducer, sagas, component]) => {
+          injectReducer('yubaHomepage', reducer.default);
+          injectSagas(sagas.default);
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
       },
     }, {
       path: '*',

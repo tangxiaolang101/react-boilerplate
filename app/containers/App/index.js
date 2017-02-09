@@ -19,7 +19,6 @@ const AppWrapper = styled.div`
   margin: 0 auto;
   display: flex;
   min-height: 100%;
-  padding: 0 16px;
   flex-direction: column;
 `;
 
@@ -35,7 +34,7 @@ export function App(props) {
       />
       <YubaHeader/>
       {React.Children.toArray(props.children)}
-      <Footer />
+      {/*<Footer />*/}
     </AppWrapper>
   );
 }

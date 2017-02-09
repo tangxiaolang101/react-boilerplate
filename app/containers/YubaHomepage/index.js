@@ -8,13 +8,15 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import makeSelectYubaHomepage from './selectors';
-import YubaHeader from 'components/yubaHeader'
+import GroupList from 'components/GroupList';
+import PostHeader from 'components/PostHeader';
 
 export class YubaHomepage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div>
-      <YubaHeader/>
+      <GroupList/>
+      <PostHeader/>
       </div>
     );
   }

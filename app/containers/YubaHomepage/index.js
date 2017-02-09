@@ -10,6 +10,7 @@ import { createStructuredSelector } from 'reselect';
 import makeSelectYubaHomepage from './selectors';
 import GroupList from 'components/GroupList';
 import PostHeader from 'components/PostHeader';
+import PostFooter from 'components/PostFooter';
 
 export class YubaHomepage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
@@ -17,6 +18,7 @@ export class YubaHomepage extends React.Component { // eslint-disable-line react
       <div>
       <GroupList/>
       <PostHeader/>
+      <PostFooter/>
       </div>
     );
   }

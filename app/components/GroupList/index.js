@@ -10,7 +10,6 @@ import Item from './Item.js';
 
 const Wrapper=styled.div`
   height:.9rem;
-  width:7.5rem;
   overflow-x: scroll;
   font-size:.3rem;
   display:flex;
@@ -29,7 +28,7 @@ class GroupList extends React.Component { // eslint-disable-line react/prefer-st
       {valuse:"asdaf",isActive:false,topicId:13},
       {valuse:"asdaf",isActive:false,topicId:13},
       {valuse:"asdaf",isActive:false,topicId:13},
-      {valuse:"asdaf",isActive:true,topicId:13},
+      {valuse:"asdaf",isActive:false,topicId:13},
       {valuse:"asd44444af",isActive:true,topicId:13},
       {valuse:"asdaf",isActive:false,topicId:13},
       {valuse:"asdaf",isActive:false,topicId:13},

@@ -12,12 +12,15 @@ const Wrapper = styled.div`
   height: 1rem;
   justify-content: flex-start;
   align-items: center;
+  margin:.24rem .3rem;
 `;
 
 const Avatar = styled.img`
   display: flex;
   height: .78rem;
   width:.78rem;
+  border-radius: .78rem;
+  border: .02rem solid #ccc;
   justify-content: flex-start;
   align-items: center;
 `;
@@ -26,6 +29,7 @@ const RightBox = styled.div`
 color:#999;
 display:flex;
 flex-direction:column;
+margin-left: .2rem;
 `;
 
 const NameString = styled.div`
@@ -33,7 +37,7 @@ font-size:.28rem;
 `;
 
 const TimeString = styled.div`
-font-size:.24rem;
+font-size:.2rem;
 `;
 
 

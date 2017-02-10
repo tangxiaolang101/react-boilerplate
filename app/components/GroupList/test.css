@@ -1,0 +1,14 @@
+div{
+margin:0 .3rem;
+  border-bottom:.2rem solid red;
+
+  display: flex;
+  height: 1rem;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: .78rem;
+  border: .02rem solid #ccc;
+  margin-left: .2rem;
+  list-style-type: none;
+  overflow-x: scroll;
+}
